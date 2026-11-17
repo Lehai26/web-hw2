@@ -4,7 +4,7 @@ const movies = [
  { 
     type: "mine",
     rank: null,
-    title: "미션 파서블 포스터", 
+    title: "미션 파서블 ", 
     year: 2021, 
     date: "2021-02-17",
     rating: 7.40,
@@ -94,7 +94,7 @@ const movies = [
     year: 2018, 
     date: "2018-07-25",
     rating: 7.4,
-    poster: "/w342/u8gdbmvbypmVmoCJyPkBiJyvAvv.jpg",
+    poster: "/u8gdbmvbypmVmoCJyPkBiJyvAvv.jpg",
     audience: 1999477},
 
     { 
@@ -105,7 +105,7 @@ const movies = [
     year: 2008, 
     date: "2008-11-26",
     rating: 6.1,
-    poster: "/w342/ai5gzHA5uWT0krEXrMfepdmJ6Qg.jpg",
+    poster: "/ai5gzHA5uWT0krEXrMfepdmJ6Qg.jpg",
     audience:77153},
 
 
