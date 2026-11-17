@@ -1,5 +1,9 @@
 // data.js : 내 영화 10편 데이터 / 레탄하이(2551017)) 
 // 영화 한 편 = 객체 하나. 키 8개 : title, year, date, rating, poster
+
+
+
+
 const movies = [
  { 
     type: "mine",
