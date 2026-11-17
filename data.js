@@ -5,14 +5,16 @@ const movies = [
     year: 2021, 
     date: "2021-02-17",
     rating: 7.40,
-    poster: "/w342/xul24PvmhG1smXsAcOPCeeuKLUN.jpg" },
+    poster: "/w342/xul24PvmhG1smXsAcOPCeeuKLUN.jpg" ,
+    audience:0},
  
  { 
     title: "미션 임파서블",
      year: 1996, 
      date: "1996-05-22",
     rating: 7.03, 
-    poster: "/w342/6vDaYhZypJzd8r0NnSY2JPIX6Y5.jpg" },
+    poster: "/w342/6vDaYhZypJzd8r0NnSY2JPIX6Y5.jpg" ,
+    audience:0},
 
     
 
@@ -20,20 +22,23 @@ const movies = [
      year: 1986, 
      date: "1986-09-06",
  rating: 7.40, 
- poster: "/lZeIe0FsT4jKsVvJxg90ygHsmf2.jpg" },
+ poster: "/lZeIe0FsT4jKsVvJxg90ygHsmf2.jpg" ,
+    audience:0},
  
  { 
     title: "미션 임파서블: 로그네이션", 
     year: 2015,
      date: "2015-07-28",
  rating: 7.20,
-  poster: "/s2426EIW0arpjN0R0qErJfXQxZD.jpg" },
+  poster: "/s2426EIW0arpjN0R0qErJfXQxZD.jpg" ,
+    audience:0},
  { 
     title: "미션 임파서블: 파이널 레코닝", 
     year: 2025, 
     date: "2025-05-17",
  rating: 7.16,
-  poster: "/iNJsojTGQoOWL9f9U23jsibONVu.jpg" },
+  poster: "/iNJsojTGQoOWL9f9U23jsibONVu.jpg" ,
+    audience:0},
 ];
 
 const kobis = [
