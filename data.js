@@ -2,7 +2,10 @@
 // 영화 한 편 = 객체 하나. 키 8개 : title, year, date, rating, poster
 
 
-
+console.log(title.length);
+console.log(rating.length);
+console.log(year.length);
+console.log(audience.length);
 
 const movies = [
  { 
