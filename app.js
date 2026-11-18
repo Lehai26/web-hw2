@@ -1,5 +1,5 @@
 // ===== Part A =====
-console.log(title.length);
-console.log(rating.length);
-console.log(year.length);
-console.log(audience.length);
+console.log(titles.length);
+console.log(ratings.length);
+console.log(years.length);
+console.log(audiences.length);
