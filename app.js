@@ -1,8 +1,4 @@
 // ===== Part A =====
-console.log(titles.length);
-console.log(ratings.length);
-console.log(years.length);
-console.log(audiences.length);
 
 
 let sumA =0;
@@ -53,3 +49,15 @@ for(let i= 0;i<years.length;i++){
 }
   
 }
+console.log(" A4 2020년대 ",d2020A,"편, 2010년대 ",d2010A,"편, 2000년대 ",d2000A,"편, 그 이전 ",olderA,"편");
+
+let bigA = "";
+for(let i = 0;i<audiences.length;i++){
+    if (audiences[i] >= 180) {
+  bigA = bigA + titles[i] + " ";
+}
+}
+if(bigA ===""){
+    bigA = "없음";
+}
+console.log(" A5 관객 100만 이상:",bigA);
