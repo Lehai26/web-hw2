@@ -29,3 +29,13 @@ for(let i=0;i<ratings.length;i++){
     }
 }
 console.log(" A3 8.0점 이상: 4편",CountA);
+
+
+let d2020A= 0;
+let d2010A = 0;
+let d2000A = 0;
+let olderA = 0;
+for(let i= 0;i<years.length;i++){
+   const decade = years[i] - (years[i] % 10);
+   console.log(years[i], decade);
+}
