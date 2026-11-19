@@ -28,7 +28,7 @@ for(let i=0;i<ratings.length;i++){
         CountA++;
     }
 }
-console.log(" A3 8.0점 이상: 4편",CountA);
+console.log(" A3 8점 이상: ",CountA,"편");
 
 
 let d2020A= 0;
@@ -37,5 +37,19 @@ let d2000A = 0;
 let olderA = 0;
 for(let i= 0;i<years.length;i++){
    const decade = years[i] - (years[i] % 10);
-   console.log(years[i], decade);
+   switch (decade) {
+  case 2020:
+    d2020A++;
+    break;
+  case 2010:
+    d2010A++;
+    break;
+    case 2000:
+        d2000A++;
+        break; 
+  default:
+    olderA++;
+    break;
+}
+  
 }
