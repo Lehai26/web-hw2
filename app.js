@@ -53,7 +53,7 @@ console.log(" A4 2020년대 ",d2020A,"편, 2010년대 ",d2010A,"편, 2000년대 
 
 let bigA = "";
 for(let i = 0;i<audiences.length;i++){
-    if (audiences[i] >= 180) {
+    if (audiences[i] >= 1800000) {
   bigA = bigA + titles[i] + " ";
 }
 }
@@ -71,12 +71,7 @@ function formatNumber(n){
 
 
  function average(list) { 
-    let sumB = 0;
-    for(let i=0;i<list.length;i++)
-{
-   sumB = sumB + list[i].rating;
-}
- return sumB / list.length;
+  return averageBy(list, "rating");
  }
 
  function best(list) {
@@ -89,6 +84,15 @@ function formatNumber(n){
     return list[topB];
  }
 
+
+ function averageBy(list, key){
+     let sumB = 0;
+    for(let i=0;i<list.length;i++)
+{
+   sumB = sumB + list[i][key];
+}
+ return sumB / list.length;
+}
  function yearsSince(dateStr) {
     const date = new Date(dateStr);
     const now = new Date();
@@ -137,3 +141,10 @@ const line2 = " 최고 " + bestMovie.title + " (" + bestMovie.rating + "점)"+" 
 const topAudienceMovie = sortBy(movies, "audience", true)[0];
 const line3 = "관객 1위: "+ topAudienceMovie.title + " (누적 "+ formatNumber(topAudienceMovie.audience)+"명)/ 개봉 "+ yearsSince(topAudienceMovie.date)+"년 전";
 document.getElementById("out").textContent = line1 + "\n" + line2 + "\n" + line3;
+
+// ===== Part C =====
+console.log("C1 " + TMDB.page + " / " + TMDB.total_pages + " / " + TMDB.total_results + " / " + getlist(TMDB).length);
+console.log("C2 " +  averageBy(getlist(TMDB), "vote_average").toFixed(1));
+ console.table(sortBy(getlist(TMDB), "vote_average", true).slice(0, 5), ["title", 
+"release_date", "vote_average"]);
+console.log( "C4 " + search(getlist(TMDB), "하트").length);
